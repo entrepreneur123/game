@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title>
+		Game 1
+	</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class ="buttons">
+		<button class ="left">Left </button>
+		<button class ="right"> Right</button>
+		<button class ="top"> top</button>
+
+		<div class ="objwrapper">
+			<div class ="obj">
+			</div>
+		</div>
+		<script>
+			//first
+			// $(".left").click(function()
+			// {
+			// 	alert("left");
+			// })
+			// $(".right").click(function()
+			// {
+			// 	alert("right");
+			// })
+
+			//second
+
+			$(".left").click(function()
+			{
+				let position = $(".obj").position()
+				console.log(position)
+				$(".obj").css("left",position.left - 20)
+			})
+			$(".right").click(function()
+			{
+				let position = $(".obj").position()
+				console.log(position)
+				$(".obj").css("left",position.left + 20)
+			})
+			// $(".top").click(function()
+			// {
+			// 	let position = $(".obj").position()
+			// 	console.log(position)
+			// 	$(".obj").css("top",posi3tion.left + 20)
+			// })
+
+
+		</script>
+	
+</body>
+</html>
